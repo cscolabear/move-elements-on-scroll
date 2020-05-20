@@ -67,7 +67,6 @@ body::after {
   position: fixed;
   width: 160px;
   will-change: transform;
-  /* transform: translate3d(-160px, 0, 0); */
 }
 
 /* #dog-house {

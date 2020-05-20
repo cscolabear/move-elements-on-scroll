@@ -24,7 +24,7 @@ $(function () {
         const maxHeight = $('body').height();
         const currentTop = $(window).scrollTop() || $('body').scrollTop();
         const dogPosX = (currentTop / (maxHeight - viewHeight)) * 100; // 現在捲動佔全頁面多入百份比
-        const dogWidthOffset = currentTop / dogWidth;
+        const dogWidthOffset = currentTop / (dogWidth / 1.2); // 補充 dog 長度，入場與出場
 
         const originTransform = $dog.css('transform');
         let newTransform = `translate3d(${dogPosX + dogWidthOffset}vw, ${getRandomY(currentTop)}px , 0)`;
