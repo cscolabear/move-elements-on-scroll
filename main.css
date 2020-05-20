@@ -1,5 +1,7 @@
 * {
   font-family: 'Press Start 2P', cursive, "Source Sans Pro", "Arial", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,8 +36,12 @@ body::after {
 }
 
 .title-container {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
-  top: 60px;
+  top: 10vh;
   width: 70%;
   margin: 0 auto;
 }
