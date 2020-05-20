@@ -43,4 +43,7 @@ $(function () {
         dogRun();
     });
 
+    $('#github-btn').click(function(){
+        setTimeout('window.open("https://github.com/cscolabear/move-elements-on-scroll", "_blank")', 800);
+    });
 });
