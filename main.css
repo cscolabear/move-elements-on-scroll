@@ -1,5 +1,5 @@
 * {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive, "Source Sans Pro", "Arial", sans-serif;
 }
 
 body {
@@ -30,6 +30,7 @@ body::after {
 
 .wrapper {
   height: 100%;
+  position: relative;
 }
 
 .title-container {
@@ -55,12 +56,12 @@ body::after {
 
 #dog-run,
 #dog-house {
-  top: 70vh;
-  position: -webkit-sticky;
-  position: sticky;
+  bottom: 70px;
+  left: -160px;
+  position: fixed;
   width: 160px;
   will-change: transform;
-  transform: translate3d(-160px, 0, 0);
+  /* transform: translate3d(-160px, 0, 0); */
 }
 
 /* #dog-house {
@@ -79,10 +80,9 @@ body::after {
 } */
 
 .grass {
-  top: 75vh;
+  bottom: 0;
   left: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   background-image: url(grass_PNG10856.png);
   background-repeat: repeat-x;
   background-position: bottom -5px left 0;
